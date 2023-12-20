@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(245, 242, 232); /* Adjust the background color as needed */
+  color: #171717;
+  margin-bottom: 1.5px;
+      position: relative;
+      padding-top: 1px;
+     padding-bottom: 1px;
+
+  /* Add other styles as needed */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+    /* Two items in a row for smaller screens */
+  }
+  
+  .footer p {
+     padding: 5px;
+  }
+}
+

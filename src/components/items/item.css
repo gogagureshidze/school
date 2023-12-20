@@ -1,0 +1,45 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.featuredItem {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(25% - 10px); /* Set the width for each item (25% for 4 items in a row with 10px gap) */
+  margin-bottom: 20px; /* Adjust the margin to create space between rows */
+}
+
+.featuredImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.featuredTitles {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+
+img {
+  transition: all 0.2s ease-in-out;
+}

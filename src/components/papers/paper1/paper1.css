@@ -1,0 +1,41 @@
+.scroll-container {
+  width: 100%;
+  max-width: 1024px; /* Set a maximum width for the container */
+  height: 100vh; /* Set a height to make it vertically scrollable */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin: 20px auto; /* Center the container horizontally and add margin around it */
+}
+
+.image-container {
+  display: block; /* Change to block to stack images vertically */
+}
+
+.image {
+  margin-top: 5px;
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  max-height: 100%; /* Ensure the image doesn't exceed its container height */
+  width: auto; /* Allow the width to adjust according to the container */
+  height: auto; /* Allow the height to adjust according to the container */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: zoom-in;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(3.0);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  /* Apply different styles for screens up to 767px wide (typical phone screens) */
+  .scroll-container {
+    margin: 10px auto; /* Adjust margin for smaller screens */
+  }
+}

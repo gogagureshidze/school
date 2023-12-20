@@ -1,0 +1,15 @@
+.text {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  margin-top: 15px;
+  color: white;
+  border: 1px solid #ccc;
+  background-color: #363534;
+  font-weight: 600;
+}
+
+.text p {
+  text-indent: 20px;
+  margin-bottom: 15px;
+}
