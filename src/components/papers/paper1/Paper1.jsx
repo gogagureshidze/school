@@ -16,6 +16,8 @@ const Paper1 = ({ imageUrls }) => {
     setZoomCoords({ x, y });
   };
 
+const toTop = () =>  window.scrollTo(0,0)
+
   useEffect(() => {
     setLoading(true); 
     
@@ -25,6 +27,7 @@ const Paper1 = ({ imageUrls }) => {
     return () => clearTimeout(delay); 
   }, []);
 
+  toTop()
   return (
     <div style={{ color: theme.syntax, background: theme.bg }}>
       <div className="scroll-container">
